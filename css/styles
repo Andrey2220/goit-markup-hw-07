@@ -1,0 +1,70 @@
+html,
+
+:root {
+	--color-iris: rgba(77,90,229);
+	--color-ocean: rgba(64,75,191);
+	--color-navy-blue: rgba(46,47,66);
+	--color-green: rgba(49,208,170);
+	--color-slate: rgba(67,68,85);
+	--color-light-slate: rgba(142,143,153);
+	--color-cornflower: rgba(231,233,252);
+	--color-cloud: rgba(244,244,253);
+	--color-navy-blue-modal: rgba(46,47,66);
+	--color-grey: rgba(46,47,66);
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.point {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.logo {
+    color: var(--color-iris);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+}
+
+.header-logo {
+    color: var(--color-navy-blue);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+}
+
+.menu-item {
+    color: var(--color-navy-blue);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.hero {
+    background-color: var(--color-navy-blue);
+    position: absolute;
+    width: 1920px;
+    left: 0px;
+    top: 72px;
+}
+
+.hero-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 60px;
+    color: #ffffff;
+}
+
+.hero-btn {
+    background-color:var(--color-iris) ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
+    flex-direction: row;
+}
