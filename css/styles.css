@@ -17,6 +17,34 @@ body {
     color: var(--primary-text-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .point {
     text-decoration: none;
     list-style-type: none;
@@ -36,6 +64,12 @@ body {
     color: var(--primary-text-color);
 }
 
+.header-div {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .footer-logo {
     color: var(--footlogo-bcg-color);
 }
@@ -47,6 +81,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    display: flex;
+    margin-left: 76px;
 }
 
 .menu-item {
@@ -57,6 +93,8 @@ body {
 
 .menu-link {
     color: var(--primary-text-color);
+    display: block;
+    margin-right: 40px;
 }
 
 .menu-link:hover,
@@ -64,6 +102,9 @@ body {
     color: var(--hover-focus-color);
 }
 
+.contact {
+    margin-left: auto;
+}
 
 .contact-list {
     font-family: 'Roboto';
@@ -71,16 +112,20 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--link-color);
+    display: flex;
 }
+
 
 .contact-items {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    margin-right: 40px;
 }
 .contact-link {
     font-style: normal;
     color: var(--link-color);
+    display: block;
 }
 
 .contact-link:hover,
@@ -91,7 +136,9 @@ body {
 
 .hero {
     background-color: var(--primary-text-color);
-    ;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
 }
 
 .hero-title {
@@ -99,10 +146,11 @@ body {
     line-height: 1.07;
     text-align: center;
     color: var(--white-color);
-    width: 494px;
-    height: 120px;
-    left: 473px;
-    top: 260px;
+    margin-bottom: 48px;
+    max-width: 496px;    
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .hero-btn {
@@ -116,6 +164,7 @@ body {
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    padding: 16px 32px;
 }
 
 .hero-btn:hover,
@@ -138,6 +187,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: var(--link-color);
+    margin-top: 8px;
 }
 
 .text-photos {
@@ -145,8 +195,36 @@ body {
     line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 60px;
 }
 
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.quality-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.quality-item {
+    flex-basis: calc((100% - 20px)/4);
+}
+
+.quality-title {
+    margin-bottom: 8px;
+}
+
+.photos {
+    padding-top: 0;
+}
+
+.photo-list {
+    display: flex;
+    gap: 24px;
+}
 
 .team-photo {
     background-color: var(--footlogo-bcg-color);
@@ -154,12 +232,31 @@ body {
 
 .team-items {
     background-color: var(--white-color);
+    flex-basis: calc((100% - 72px)/4);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08) rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
+.team-img-list {
+    display: flex;
+    gap: 24px;
+}
+
+.wrapper {
+    padding: 32px 16px;
+    text-align: center;
+}
+
+.text-photos {
+    margin-top: 8px;
+}
+
+/* footer */
 
 .footer {
     background-color: var(--primary-text-color);
-    ;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-text {
@@ -167,10 +264,10 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-
-
+    width: 264px;
 }
 
+/* porfolio */
 
 .btn-point {
     background-color: var(--footlogo-bcg-color);
@@ -183,6 +280,7 @@ body {
     cursor: pointer;
     border: 1px solid var(--filter-btn);
     border-radius: 4px;
+    padding: 11px 23px;
 }
 
 .btn-point:hover,
@@ -190,4 +288,34 @@ body {
     background: var(--logo-btn-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     color: var(--white-color);
+}
+
+.portfolio {
+    padding-top: 96px;
+}
+
+.btn-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
+.bth-item {
+    margin-right: 24px;
+}
+
+.img-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+}
+
+.services-list {
+    flex-basis: calc((100% - 48px) / 3);
+}
+
+.delineation {
+    padding: 32px 16px;
+    border: 1px solid var(--filter-btn);
 }
