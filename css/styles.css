@@ -126,6 +126,7 @@ ul {
     font-style: normal;
     color: var(--link-color);
     display: block;
+    padding: 32px 16px;
 }
 
 .contact-link:hover,
@@ -163,8 +164,8 @@ ul {
     letter-spacing: 0.04em;
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
     padding: 16px 32px;
+    border-radius: 0px;
 }
 
 .hero-btn:hover,
@@ -206,11 +207,11 @@ ul {
 .quality-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 24px;
 }
 
 .quality-item {
-    flex-basis: calc((100% - 20px)/4);
+    flex-basis: calc((100% - 3 * 24px)/4);
 }
 
 .quality-title {
@@ -235,20 +236,22 @@ ul {
     flex-basis: calc((100% - 72px)/4);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08) rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    padding-bottom: 120px;
 }
 
 .team-img-list {
     display: flex;
     gap: 24px;
+    padding-bottom: 120px;
 }
 
 .wrapper {
-    padding: 32px 16px;
+    padding-top: 8px;
     text-align: center;
 }
 
 .text-photos {
-    margin-top: 8px;
+    margin-top: 0px;
 }
 
 /* footer */
@@ -265,6 +268,11 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
+    padding-bottom: 100px;
+}
+
+.footer-logo {
+    padding-top: 100px;
 }
 
 /* porfolio */
