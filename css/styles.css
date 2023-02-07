@@ -7,7 +7,7 @@
     --footlogo-bcg-color: #F4F4FD;
     --white-color: #ffffff;
     --filter-btn: #E7E9FC;
-
+    --footer-color:#31D0AA;
 }
 
 
@@ -369,10 +369,7 @@ ul {
 
 .foot-net-link {
     justify-content: center;
-    margin-right: 804px;
-    margin-left: 120px;
 }
-
 
 .cont-footer {
     display: flex;
@@ -422,7 +419,7 @@ ul {
 
 .social-link:hover,
 .social-link:focus {
-    background-color: var(--hover-footer);
+    background-color: var(--footer-color)
 }
 
 
@@ -463,6 +460,11 @@ ul {
     margin-right: 24px;
 }
 
+.bth-item:hover,
+.bth-item:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .img-list {
     display: flex;
     flex-wrap: wrap;
@@ -480,6 +482,10 @@ img {
 
 .services-list {
     flex-basis: calc((100% - 48px) / 3);
+}
+
+.services-list:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .delineation {
