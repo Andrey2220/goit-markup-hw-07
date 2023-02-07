@@ -367,10 +367,20 @@ ul {
     margin-top: 16px;
 }
 
+.foot-net-link {
+    justify-content: center;
+    margin-right: 804px;
+    margin-left: 120px;
+}
+
 
 .cont-footer {
     display: flex;
     gap: 120px;
+}
+
+.con-foot {
+    margin-left: 156px;
 }
 
 .net-text {
