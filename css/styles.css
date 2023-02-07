@@ -263,6 +263,93 @@ ul {
     padding-bottom: 32px;
 }
 
+.team-contacts {
+    width: 40px;
+    height: 40px;
+    padding-left: 0;
+}
+
+.team-contacts-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    padding-top: 8px;
+}
+
+.team-contacts-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--logo-btn-color);
+    border-radius: 50%;
+}
+
+.team-contacts-link:hover,
+.team-contacts-link:focus {
+    background-color: var(--hover-focus-color);
+}
+
+.team-contacts-icon {
+    fill: var(--white-color);
+}
+
+
+.svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    height: 112px;
+    border-radius: 4px;
+    background-color: var(--footlogo-bcg-color);
+}
+
+.section-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.customers-list {
+    display: flex;
+}
+
+.customers-items {
+    flex-basis: calc((100% - 24px) / 5);
+
+}
+
+.customers-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    width: 168px;
+    height: 88px;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    border: 1px solid var(--hover-focus-color);
+}
+
+.customers-link:focus svg {
+    fill: var(--hover-focus-color);
+}
+
+.customers-svg {
+    fill: #8E8F99;
+}
+
+.customers-svg:hover,
+.customers-svg:focus {
+    fill: var(--hover-focus-color);
+}
 /* footer */
 
 .footer {
@@ -278,6 +365,54 @@ ul {
     letter-spacing: 0.02em;
     width: 264px;
     margin-top: 16px;
+}
+
+
+.cont-footer {
+    display: flex;
+    gap: 120px;
+}
+
+.net-text {
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.foot-list {
+    display: flex;
+    gap: 20px;
+    float: left;
+}
+
+.foot-net {
+    color: var(--white-color);
+    margin-bottom: 16px;
+    font-weight: 500;
+    line-height: calc(24/16);
+    list-style: none;
+    float: left;
+}
+
+
+
+.foot-net:last-child {
+    margin-right: 0;
+}
+
+.social-link {
+    display: flex;
+    fill: var(--white-color);
+    background-color: var(--link-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--hover-footer);
 }
 
 
@@ -353,3 +488,6 @@ img {
     color: var(--logo-btn-color);
     text-transform: uppercase;
 }
+
+
+
