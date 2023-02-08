@@ -304,6 +304,7 @@ ul {
     height: 112px;
     border-radius: 4px;
     background-color: var(--footlogo-bcg-color);
+    fill: currentColor;
 }
 
 .section-title {
@@ -331,11 +332,14 @@ ul {
     border-radius: 4px;
     width: 168px;
     height: 88px;
+    color: #8E8F99;
 }
 
 .customers-link:hover,
 .customers-link:focus {
     border: 1px solid var(--hover-focus-color);
+    border-color: var(--hover-focus-color);
+    color: var(--hover-focus-color);
 }
 
 .customers-link:focus svg {
@@ -343,7 +347,7 @@ ul {
 }
 
 .customers-svg {
-    fill: #8E8F99;
+    fill: #8e8f99;
 }
 
 .customers-svg:hover,
@@ -480,11 +484,12 @@ img {
     height: auto;
 }
 
-.services-list {
+.portfolio-links {
+    display: block;
     flex-basis: calc((100% - 48px) / 3);
 }
 
-.services-list:hover {
+.portfolio-links:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
