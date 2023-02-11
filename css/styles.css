@@ -73,6 +73,7 @@ ul {
 
 
 .menu-link {
+    font-weight: 500;
     line-height: 2;
     color: var(--primary-text-color);
     display: block;
@@ -108,7 +109,7 @@ ul {
 
 .menu-link.current::after {
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     content: '';
     display: block;
     width: 100%;
@@ -198,8 +199,9 @@ ul {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 16px 32px;
     border: none;
+    border-radius: 4px;
     transition-duration: 250ms;
-    transition-property: color;
+    transition-property: background, box-shadow;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -208,7 +210,6 @@ ul {
     background: var(--hover-focus-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     letter-spacing: 0.04em;
-    border-radius: 4px;
 }
 
 .text-title {
@@ -310,7 +311,7 @@ ul {
     background-color: var(--logo-btn-color);
     border-radius: 50%;
     transition-duration: 250ms;
-    transition-property: color;
+    transition-property: background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -362,7 +363,7 @@ ul {
     height: 88px;
     color: #8E8F99;
     transition-duration: 250ms;
-    transition-property: color;
+    transition-property: color, border-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -447,7 +448,7 @@ ul {
     justify-content: center;
     align-items: center;
     transition-duration: 250ms;
-    transition-property: color;
+    transition-property: background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -472,13 +473,13 @@ ul {
     border-radius: 4px;
     padding: 11px 23px;
     transition-duration: 250ms;
-    transition-property: color;
+    transition-property: background, color, border-color, box-shadow;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-point:hover,
 .btn-point:focus {
-    background: var(--logo-btn-color);
+    background-color: var(--logo-btn-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     color: var(--white-color);
 }
@@ -534,14 +535,12 @@ img {
     height: 100%;
     overflow: auto;
     transform: translate(0, 100%);
+    transition: transform 250ms linear;
     background-color: hsla(235, 75%, 60%, 0.95);
     font-size: 20px;
     color: var(--white-color);
     padding-top: 40px;
     padding-left: 50px;
-    transition-duration: 250ms;
-    transition-property: color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .port {
