@@ -402,15 +402,15 @@ ul {
 
 .foot-net-link {
     justify-content: center;
+    margin-right: 80px;
 }
 
 .cont-footer {
     display: flex;
-    gap: 120px;
 }
 
 .con-foot {
-    margin-left: 156px;
+    margin-right: 120px;
 }
 
 .net-text {
@@ -508,7 +508,7 @@ ul {
     gap: 16px;
     min-width: 165px;
     padding: 8px 24px;
-    background-color: var(--accent-color);
+    background-color: var(--hover-focus-color);
     border: none;
     border-radius: 4px;
     font-weight: 500;
@@ -674,6 +674,10 @@ img {
     pointer-events: none;
 }
 
+.modal-close-icon {
+    transition: fill var(--transition-dur-and-func);
+}
+
 .modal {
     background: #FCFCFC;
     width: 408px;
@@ -696,6 +700,11 @@ img {
     margin-bottom: 14px;
     font-weight: 500;
     line-height: 1.5;
+}
+
+.form-modal {
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .form-win {
@@ -751,15 +760,6 @@ img {
     fill: var(--logo-btn-color);
 }
 
-.form-message {
-    display: block;
-    padding: 8px 16px;
-    resize: none;
-    font-size: 14px;
-    line-height: 1.5;
-    transition: border var(--transition-dur-and-func);
-}
-
 .form-text {
     display: block;
     height: 120px;
@@ -801,8 +801,12 @@ img {
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
-    fill: #2E2F42;
+    fill: var(--title-color);
     transition: fill var(--transition-dur-and-func);
+}
+
+.modal-icon input:focus {
+    color: var(--hover-focus-color);
 }
 
 .modal-check-hid {
@@ -853,6 +857,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 24px;
     min-width: 169px;
     padding: 16px 32px;
     background: var(--hover-focus-color);
