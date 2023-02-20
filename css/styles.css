@@ -732,6 +732,11 @@ img {
 .input-wrapper {
     position: relative;
     display: block;
+    fill: var(--primary-text-color);
+}
+
+.input-wrapper:focus+.input-wrapper {
+    fill: var(--hover-focus-color);
 }
 
 
@@ -756,7 +761,7 @@ img {
     outline: transparent;
 }
 
-.input-modal:focus+.form-icon {
+.input-modal:focus+.modal-icon {
     fill: var(--logo-btn-color);
 }
 
