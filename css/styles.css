@@ -880,10 +880,10 @@ img {
     transition: border-color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
 }
 
-.form-check {
-    background-color: var(--hover-focus-color-color);
+.form-check { 
+    background-color: var(--hover-focus-color);
     border-color: #404BBF;  
-}
+} 
 
 .form-modal-check {
     display: flex;
