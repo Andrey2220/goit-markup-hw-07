@@ -39,6 +39,19 @@ ul {
     padding: 0;
 }
 
+.visual-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .container {
     width: 1158px;
     padding-left: 15px;
@@ -873,16 +886,24 @@ img {
     justify-content: center;
     width: 16px;
     height: 16px;
-    border: 1.25px solid var(--title-color);
+    border: 1.25px solid var(--primary-text-color);
+    background-image: url('../images/Vector.svg');
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 2px;
     margin-right: 8px;
     cursor: pointer;
     transition: border-color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
 }
 
-.form-check { 
+.form-check {
     background-color: var(--hover-focus-color);
-    border-color: #404BBF;  
+    border-color: var(--hover-focus-color);
+}
+
+.form-check:checked+.modal-check { 
+    background-color: var(--hover-focus-color);
+    border-color: var(--hover-focus-color);  
 } 
 
 .form-modal-check {
@@ -894,3 +915,5 @@ img {
     line-height: 1.33;
     letter-spacing: 0.04em;
     color: #757575;}
+
+
