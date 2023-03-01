@@ -8,7 +8,7 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -50,6 +50,18 @@
             </li>
           </ul>
         </address>
+
+          <button
+          type="button"
+          class="mob-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mob-menu-open" width="32" height="22">
+            <use href="./images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
+
       </div>
     </header>
     <main>
@@ -123,22 +135,51 @@
           <h2 class="text-photos">What Are We Doing</h2>
           <ul class="photo-list point">
             <li class="photo-item">
-              <img
-                src="./images/wathc.jpg"
-                alt="viewing statistics and identifying the problem"
-                width="360"
-                height="300" />
+
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/wathc_desk1@1x.jpg   1x,
+                    ./images/our_work/wathc_desk1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/desktop/wathc_desk1@1x.jpg"
+                  alt="viewing statistics and identifying the problem"
+                  width="360"
+                  height="300"
+                  loading="lazy" />
+              </picture>    
             </li>
             <li class="photo-item">
-              <img
-                src="./images/massage.jpg"
-                alt="problem solving discussion"
-                width="360"
-                height="300" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/massage@1x.jpg   1x,
+                    ./images/our_work/massage@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/desktop/massage@1x.jpg"
+                  alt="problem solving discussion"
+                  width="360"
+                  height="300"
+                  loading="lazy"/>
+              </picture> 
             </li>
             <li class="photo-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/decision@1x.jpg   1x,
+                    ./images/our_work/decision@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
               <img
-                src="./images/decision.jpg"
+                src="./images/desktop/decision@1x.jpg"
                 alt="completion of the problem"
                 width="360"
                 height="300" />
@@ -152,8 +193,57 @@
           <h2 class="text-photos">Our Team</h2>
           <ul class="team-img-list point">
             <li class="team-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/Mark@1x.webp 1x,
+                    ./images/desktop/Mark@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/Mark@1x.jpg 1x,
+                    ./images/desktop/Mark@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/tablet/Mark_tab@1x.webp 1x,
+                    ./images/tablet/Mark_tab@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/Mark_tab@1x.jpg 1x,
+                    ./images/tablet/Mark_tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/mobile/Mark_mob@1x.webp 1x,
+                    ./images/mobile/Mark_mob@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/Mark_mob@1x.jpg 1x,
+                    ./images/mobile/Mark_mob@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
               <img
-                src="./images/mark.jpg"
+                src="./images/desktop/mark@1.jpg"
                 alt="Dark hair, slightly red skin, dark eyes, thick eyebrows, small ears"
                 width="264" />
               <div class="card-text">
@@ -213,8 +303,56 @@
               </div>
             </li>
             <li class="team-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/Tom@1x.webp 1x,
+                    ./images/desktop/Tom@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/Tom@1x.jpg 1x,
+                    ./images/desktop/Tom@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/tablet/Tom_tab@1x.webp 1x,
+                    ./images/tablet/Tom_tab@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/Tom_tab@1x.jpg 1x,
+                    ./images/tablet/Tom_tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/mobile/Tom_mob@1x.webp 1x,
+                    ./images/mobile/Tom_mob@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/Tom_mob@1x.jpg 1x,
+                    ./images/mobile/Tom_mob@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
               <img
-                src="./images/tom.jpg"
+                src="./images/desktop/tom.jpg"
                 alt="Blond hair, not a big beard, thin eyebrows, straight teeth."
                 width="264" />
               <div class="card-text">
@@ -274,8 +412,56 @@
               </div>
             </li>
             <li class="team-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/Camila@1x.webp 1x,
+                    ./images/desktop/Camila@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/Camila@1x.jpg 1x,
+                    ./images/desktop/Camila@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/tablet/Camila_tab@1x.webp 1x,
+                    ./images/tablet/Camila_tab@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/Camila_tab@1x.jpg 1x,
+                    ./images/tablet/Camila_tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/mobile/Camila_mob@1x.webp 1x,
+                    ./images/mobile/Camila_mob@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/Camila_mob@1x.jpg 1x,
+                    ./images/mobile/Camila_mob@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
               <img
-                src="./images/camila.jpg"
+                src="./images/desktop/Camila@1.jpg"
                 alt="Long, dark hair. Even skin tone. There is a small amount of makeup. Dark eyes. Dark, small eyebrows, pierced ears."
                 width="264" />
               <div class="card-text">
@@ -335,8 +521,56 @@
               </div>
             </li>
             <li class="team-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/Daniel@1x.webp 1x,
+                    ./images/desktop/Daniel@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/Daniel@1x.jpg 1x,
+                    ./images/desktop/Daniel@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/tablet/Daniel_tab@1x.webp 1x,
+                    ./images/tablet/Daniel_tab@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/Daniel_tab@1x.jpg 1x,
+                    ./images/tablet/Daniel_tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/mobile/Daniel_mob@1x.webp 1x,
+                    ./images/mobile/Daniel_mob@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/Daniel_mob@1x.jpg 1x,
+                    ./images/mobile/Daniel_mob@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
               <img
-                src="./images/daniel.jpg"
+                src="./images/desktop/daniel.jpg"
                 alt="Dark, slightly curly hair. Blue eyes. There is bristles. Dimples on cheeks. Straight teeth. Fair skin."
                 width="264" />
               <div class="card-text">
@@ -579,7 +813,70 @@
         </form>
       </div>
     </div>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="mob-btn-close js-close-menu">
+        <svg class="mob-btn-close" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+      <ul class="mob-menu">
+        <li class="mob-item point">
+          <a href="./index.html" class="mob-link point ">Studio</a>
+        </li>
+        <li class="mob-item point">
+          <a href="./portfolio.html" class="mob-link point">Portfolio</a>
+        </li>
+        <li class="mob-item point">
+          <a href="#" class="mob-link current point">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mob-contacts">
+        <li class="mob-contacts-item point">
+          <a href="tel:+110001111111" class="mob-contacts-tel point"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mob-menu-contacts point">
+          <a href="mailto:info@devstudio.com" class="mob-contacts-email point"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mob-list list">
+        <li class="mob-list-item">
+          <a class="mob-list-link" href="#" aria-label="instagram">
+            <svg class="mob-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mob-list-item">
+          <a class="mob-list-link" href="#" aria-label="twitter">
+            <svg class="mob-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mob-list-item">
+          <a class="mob-list-link" href="#" aria-label="facebook">
+            <svg class="mob-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mob-list-item">
+          <a class="mob-list-link" href="#" aria-label="linkedin">
+            <svg class="mob-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu-mobile.js"></script>
   </body>
 </html>
 
