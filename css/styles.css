@@ -225,7 +225,7 @@ body {
 }
 
 
-/* === MOBILE MENU === */
+
 
 .menu-mob {
     position: fixed;
@@ -382,7 +382,7 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .nav-bar {
         width: 100%;
         justify-content: space-between;
@@ -391,7 +391,7 @@ body {
 }
 
 
-/* === TABLET MODE ===*/
+
 
 @media screen and (min-width: 769px) {
     .menu-hamburg {
@@ -428,9 +428,6 @@ body {
         bottom: -23px;
     }
 
-    .contact-link {
-        font-size: 12px;
-    }
 }
 
 /* === DESCTOP MODE === */
@@ -451,9 +448,9 @@ body {
 
 
 
-/* ========================== HERO SECTION ========================== */
 
 .hero-section {
+    max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
     display: flex;
@@ -464,9 +461,11 @@ body {
                         url('../images/hero-bg.jpg');
     background-position: center;
     background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
                             url('../images/mobile-hero-bg.jpg');
@@ -475,7 +474,7 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (min-resolution: 2dppx) {
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
                             url('../images/mobile-hero-bg@2x.jpg');
@@ -486,7 +485,7 @@ body {
 @media screen and (max-width: 1200px) {
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url('../images/tablet-hero-bg.jpg');
+            url('../images/mobile-hero-bg.jpg');
         padding-bottom: 108px;
         padding-top: 112px;
     }
@@ -528,7 +527,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     margin-bottom: 48px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .hero-title {
         width: 320px;
         font-size: 36px;
@@ -561,7 +560,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 }
 
 
-/* ========================== ADVANTAGES SECTION ========================== */
+
 
 .quality-icon {
     background-color: var(--cloud);
@@ -600,7 +599,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     font-weight: 500;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .quality-icon {
         display: none;
     }
@@ -672,10 +671,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 }
 
 
-
-
-/* ========================== WHAT ARE WE DOING SECTION ========================== */
-
 .photos-section {
     display: none;
 }
@@ -696,8 +691,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     }
 }
 
-
-/* ========================== OUR TEAM SECTION ========================== */
 
 .team-section {
     background-color: var(--cloud);
@@ -772,7 +765,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     gap: 16px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .team-img {
         align-items: center;
         flex-direction: column;
@@ -788,8 +781,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     }
 }
 
-
-/* ========================== CUSTOMERS SECTION ========================== */
 
 .customers-list {
     display: flex;
@@ -827,7 +818,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .customers-list {
         flex-wrap: wrap;
         row-gap: 72px;
@@ -836,9 +827,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     }
 }
 
-
-
-/* ========================== FOOTER ========================== */
 
 .footer-section {
     display: flex;
@@ -1043,8 +1031,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     }
 }
 
-/* ========================== PORTFOLIO PAGE ========================== */
-
 .portfolio-section {
     padding-top: 96px;
     padding-bottom: 120px;
@@ -1159,9 +1145,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     transform: translate(0, 0);
 }
 
-
-
-/* ========================== BACKDROP ========================== */
 
 .modal-form-win {
     display: flex;
