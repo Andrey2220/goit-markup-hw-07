@@ -121,7 +121,14 @@ body {
     align-items: center;
 }
 
-
+@media screen and (min-width: 768px) {
+    .hero-section {
+        background-image: linear-gradient
+        (rgba(46, 47, 66, 0.7),
+         rgba(46, 47, 66, 0.7)),
+        url('../images/tablet-hero-bg@2x.jpg');
+    }
+}
 
 .menu-item-link.current {
     position: relative;
@@ -972,7 +979,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     fill: #fff;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .footer-section {
         flex-direction: column;
         align-items: center;
