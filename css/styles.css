@@ -411,7 +411,7 @@ body {
 
 
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .menu-hamburg {
         display: none;
     }
@@ -509,7 +509,7 @@ body {
     }
 }
 
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2),
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
 screen and (min-width: 769px) and (min-resolution: 192dpi),
 screen and (min-width: 769px) and (min-resolution: 2dppx) {
     .hero-section {
@@ -592,7 +592,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 }
 
 .quility-list {
-    display: flex;
     justify-content: space-between;
 }
 
@@ -635,7 +634,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .quality-icon {
         display: none;
     }
@@ -643,6 +642,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     .quility-list {
         flex-wrap: wrap;
         row-gap: 72px;
+        display: flex;
     }
 
     .quility-item {
@@ -1024,7 +1024,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .footer-section {
         padding-left: 108px;
         column-gap: 24px;
