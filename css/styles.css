@@ -100,7 +100,7 @@ body {
 
 .header {
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 22px;
     border-bottom: 1px solid var(--cornflower);
     position: relative;
 }
@@ -111,9 +111,21 @@ body {
     justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .header {
+        padding-bottom: 13px;
+    }
+}
+
 .nav-menu {
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .nav-menu {
+        width: 100%;
+    }
 }
 
 .menu {
@@ -210,6 +222,11 @@ body {
     color: var(--ocean);
 }
 
+@media screen and (max-width: 1200px) {
+    .contact-link {
+        font-size: 12px;
+    }
+}
 
 .menu {
     display: none;
@@ -245,11 +262,12 @@ body {
     z-index: 200;
     padding: 80px 40px 40px;
     overflow: hidden;
-    transition: opacity var(--transition),
+    transition: transform var(--transition),
                 visibility var(--transition);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
                 0px 1px 1px rgba(46, 47, 66, 0.16), 
                 0px 1px 6px rgba(46, 47, 66, 0.08);
+    transform: translateX(100%);
 }
 
 .mobile-menu {
@@ -260,21 +278,10 @@ body {
 }
 
 .is-open {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 80px 35px 40px 40px;
-    background-color: var(--white-color);
-    overflow-y: auto;
-    z-index: 999;
-    transform: translateX(100%);
+    transform: translateX(0%);
     transition: transform 250ms ease-in-out;
 }
-    /*opacity: 0;
-    visibility: hidden;
-    pointer-events: none;*/
+
 
 .contact-section {
     display: flex;
@@ -352,6 +359,7 @@ body {
 .contact-item-phone:is(:hover, :focus) {
     color: var(--iris);
 }
+
 
 .contact-item-email {
     font-weight: 500;
@@ -432,8 +440,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: baseline;
-        row-gap: 4px;
-        position: relative; 
+        row-gap: 4px; 
     }
 
     .list-contacts-item:first-child {
@@ -441,14 +448,13 @@ body {
     }
 
     .list-contacts-item:last-child {
-        position: absolute;
         right: 0;
         bottom: -23px;
     }
 
 }
 
-/* === DESCTOP MODE === */
+
 @media screen and (min-width: 1200px) {
     .container {
         width: 1158px;
